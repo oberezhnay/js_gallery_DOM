@@ -12,11 +12,11 @@ galleryList.addEventListener('click', (e) => {
     const linkEl = e.target.closest('a');
 
     if (linkEl.getAttribute('href')) {
-      newSrc = linkEl.getAttribute('href');
+      newSrc = linkEl.href;
     }
   } else if (e.target.tagName === 'A') {
     if (e.target.getAttribute('href')) {
-      newSrc = e.target.getAttribute('href');
+      newSrc = e.target.href;
     }
   } else {
     return;
