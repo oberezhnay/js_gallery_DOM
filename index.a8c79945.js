@@ -1,0 +1,2 @@
+var t=document.querySelector("#largeImg");document.querySelector(".gallery__list").addEventListener("click",function(e){e.preventDefault();var r="";if("IMG"===e.target.tagName){var a=e.target.closest("a");a.getAttribute("href")&&(r=a.href)}else{if("A"!==e.target.tagName)return;e.target.getAttribute("href")&&(r=e.target.href)}t.getAttribute("src")!==r&&t.setAttribute("src",r)});
+//# sourceMappingURL=index.a8c79945.js.map
